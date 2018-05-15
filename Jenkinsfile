@@ -5,12 +5,12 @@ pipeline {
 			steps {
 				echo 'Hello world'
 			}
-      stage('Who Am I?') { agent any
-        steps {
-          sh 'whoami'
-          sh 'host -t TXT pgp.michaelholley.us | awk -F \'"\' \'{print $2}\''
-        }
-      }
 		}
+    stage('Who Am I?') { agent any
+      steps {
+        sh 'whoami'
+        sh 'host -t TXT pgp.michaelholley.us | awk -F \'"\' \'{print $2}\''
+      }
+    }
 	}
 }
