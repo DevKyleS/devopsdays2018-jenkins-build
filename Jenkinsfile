@@ -29,20 +29,20 @@ pipeline {
 				input 'Deploy to stage?'
 			}
 		}
-		stage ('Parallel') { agent any
+		stage ('Parallel') {
 			failFast true
 			Parallel{
-				stage('Build 1') {
+				stage('Build 1') { agent any
 					steps {
 						echo 'this is build 1'
 					}
 				}
-				stage('Build 2') {
+				stage('Build 2') { agent any
 					steps {
 						echo 'this is build 2'
 					}
 				}
-				stage('Build 3') {
+				stage('Build 3') { agent any
 					steps {
 						echo 'this is build 3'
 					}
