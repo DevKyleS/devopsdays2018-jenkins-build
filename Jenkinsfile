@@ -31,7 +31,7 @@ pipeline {
 		}
 		stage ('Parallel') {
 			failFast true
-			Parallel{
+			parallel {
 				stage('Build 1') { agent any
 					steps {
 						echo 'this is build 1'
