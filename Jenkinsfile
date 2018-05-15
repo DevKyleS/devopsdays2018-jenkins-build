@@ -47,6 +47,56 @@ pipeline {
 						echo 'this is build 3'
 					}
 				}
+				stage('Build 4') { agent any
+					steps {
+						echo 'this is build 4'
+					}
+				}
+				stage('Build 5') { agent any
+					steps {
+						echo 'this is build 5'
+					}
+				}
+				stage('Build 6') { agent any
+					steps {
+						echo 'this is build 6'
+					}
+				}
+				stage('Build 7') { agent any
+					steps {
+						echo 'this is build 7'
+					}
+				}
+				stage('Build 8') { agent any
+					steps {
+						echo 'this is build 8'
+					}
+				}
+				stage('Build 9') { agent any
+					steps {
+						echo 'this is build 9'
+					}
+				}
+				stage('Build 10') { agent any
+					steps {
+						echo 'this is build 10'
+					}
+				}
+				stage('Build 11') { agent any
+					steps {
+						echo 'this is build 11'
+					}
+				}
+				stage('Build 12') { agent any
+					steps {
+						echo 'this is build 12'
+					}
+				}
+				stage('Build 13') { agent any
+					steps {
+						echo 'this is build 13'
+					}
+				}
 			}
 		}
 	}
